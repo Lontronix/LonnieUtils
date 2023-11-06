@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct CloseButton: View {
+public struct CloseButton: View {
 
     @Environment(\.dismiss) private var dismiss
 
-    var body: some View {
+    public var body: some View {
         Button {
             dismiss()
         } label: {
