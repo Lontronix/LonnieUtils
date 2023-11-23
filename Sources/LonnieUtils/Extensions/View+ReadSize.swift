@@ -9,11 +9,11 @@
 import SwiftUI
 
 // MARK: - SizePreferenceKey
-private struct SizePreferenceKey: PreferenceKey {
+public struct SizePreferenceKey: PreferenceKey {
 
-  static var defaultValue: CGSize = .zero
+  public static var defaultValue: CGSize = .zero
 
-  static func reduce(value: inout CGSize, nextValue: () -> CGSize) {}
+  public static func reduce(value: inout CGSize, nextValue: () -> CGSize) {}
 
 }
 
@@ -31,7 +31,7 @@ var body: some View {
 */
 
 // MARK: - readSize
-extension View {
+public extension View {
 
   func readSize(onChange: @escaping (CGSize) -> Void) -> some View {
     background(
