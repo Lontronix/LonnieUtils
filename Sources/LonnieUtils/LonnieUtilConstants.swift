@@ -8,5 +8,5 @@
 import Foundation
 
 public enum LonnieUtilConstants {
-    public static let minBarButtonHeight: CGFloat = 25.0
+    public static let minBarButtonHeight: CGFloat = 30.0
 }
