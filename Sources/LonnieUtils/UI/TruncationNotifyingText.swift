@@ -22,7 +22,8 @@ public struct TruncationNotifyingText: View {
     let lineLimit: Int?
 
     /// Note: the passed text should not include a `.lineLimit` modifier or this won't work properly
-    @ViewBuilder var text: Text
+    @ViewBuilder
+    var text: Text
 
     public init(lineLimit: Int?, @ViewBuilder text: () -> Text) {
         self.lineLimit = lineLimit

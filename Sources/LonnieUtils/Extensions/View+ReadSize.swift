@@ -17,7 +17,6 @@ public struct SizePreferenceKey: PreferenceKey {
 
 }
 
-
 /*
 
 Example:
@@ -25,7 +24,7 @@ Example:
 var body: some View {
   childView
     .readSize { newSize in
-      print("The new child size is: \(newSize)")
+      log("The new child size is: \(newSize)")
     }
 }
 */
